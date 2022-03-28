@@ -1,0 +1,501 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+*{margin: 0; padding: 0;}
+a{ text-decoration: none; color: #333; display: block; font-family: 'Noto Sans KR', sans-serif;}
+li{list-style: none;}
+header,section,footer{
+    float: left;
+    width: 100%;
+}
+/* 모든영역에 box sizing 설정 */
+header, section, footer, div{
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.sb{width: 100%;
+background-color:rgba(122, 95, 19, 0.835);
+margin: 0 auto;
+height: 40px;
+}
+.ssb{
+    width: 1300px;
+    margin: 0 auto;
+}
+.sb .ssb>a{
+    float: left;
+    color: white;
+    padding-left: 20px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+.sb .ssb div a{
+    float: right;
+    border-radius: 25px;
+    background-color: rgba(51, 51, 51, 0.527);
+    color: aliceblue;
+    padding: 0 20px;
+    margin: 10px 5px ;
+}
+.banner{
+    width: 1300px;
+    margin: 0 auto;
+}
+.banner .logo a{
+    background-image: url(/img/LOGO.png);
+    background-repeat: no-repeat;
+    width: 380px;
+    height: 80px;
+    float: left;
+    margin-top: 10px;
+}
+.banner nav >ul > li {
+    float: left;
+    padding: 0px 40px;
+    margin: 40px 30px 0;
+}
+nav >ul >li >a{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+nav ul li{
+    position: relative;
+    margin: 20px;
+}
+nav ul li ul{
+    /* display: none; */
+    position: absolute;
+    opacity:0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+nav ul li:hover ul{
+    /* display: block; */
+    /* background-color:yellow; */
+    float: left;
+    width: 150px;
+    left: 20px;
+    border: #333 1px solid;
+    z-index: 10;
+    visibility: visible;
+    opacity: 1;
+    background-color: white;
+}
+nav ul li ul li a{padding-left: 10px;}
+nav ul li ul li{margin: 0 auto; padding:10px 0px; position: relative;border-bottom:rgba(0, 0, 0, 0.315) 1px solid  ;z-index: 10;}
+nav ul li ul li:hover{
+    background-color: rgba(0, 0, 0, 0.315);
+    width: 100%;
+    margin: 0 auto;
+}
+nav>ul>li>a:after{
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: rgba(121, 70, 4, 0.863);
+    float: left;
+    bottom: 20px;
+    left: 50%;
+    position: absolute;
+    /* border: #333 1px solid; */
+    transition: all 0.5s;
+
+}
+nav> ul> li >a:hover:after{
+    /* display: block; */
+    width: 65%;
+    left: 20%;
+}
+
+/* section */
+section{
+    height: 3720px;
+    /* background-color: rgba(205, 146, 50, 0.404); */
+    position: relative;
+    margin: 0 auto;
+}
+.centerbox{
+    width: 1920px;
+    margin: 0 auto;
+}
+.mvp{
+    height:570px;
+}
+.b1{
+    background-image: url(/img/B2.png);
+    background-repeat: no-repeat;
+    z-index: 20;
+}
+.center_box{
+    float: left;
+    width: 100%;
+    height: 560px;
+    /* background-color: #333; */
+}
+.mid{
+    width: 1300px;
+    height:100%;
+    margin: 0 auto;
+    /* background-color: firebrick; */
+}
+.center_box .mid{
+    margin-top: 80px;
+    margin-bottom: 90px;
+}
+.video{
+    width: 650px;
+    height: 360px;
+    float: left;
+    
+}
+.center_box > .mid> .tg> .pic{
+    width: 630px;
+    height: 380px;
+    float: left;
+    margin: 0x 10px;
+    /* position: relative; */
+}
+.qq{
+    margin: 5px 0 10px 10px;
+}
+.center_box .mid .tg .pic .p1{
+    float: left;
+    background-image:url(/img/51.png) ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 300px;
+    height: 180px;
+    z-index: 9;
+}
+.center_box .mid .tg .pic .p2{
+    float: left;
+    background-image:url(/img/53.png) ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 300px;
+    height: 180px;
+}
+.center_box .mid .tg .pic .p3{
+    float: left;
+    background-image:url(/img/54.png) ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 300px;
+    height: 180px;
+}
+.center_box .mid .tg .pic .p4{
+    float: left;
+    background-image:url(/img/52.png) ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 300px;
+    height: 180px;
+    line-height: 30px;
+}
+.qq{
+    position: relative;
+}
+.qq img{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+    
+.qq h3{
+    padding: 30px;
+    color: white;
+    text-shadow: rgba(121, 70, 4, 0.863) 1px 1px 5px ;
+    font-size: 22px;
+}
+.qq .bg2{
+    background-color: rgba(22, 21, 21, 0.486);
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+.qq span{
+    padding:0 30px;
+    display: block;
+    color: whitesmoke;
+    font-size: 16px;
+}
+.qq .bg2:hover{
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.5s;
+}
+
+/* 3번째 */
+.cc1{
+    width: 100%;
+    height: 630px;
+    background-color: #eedfd2;
+    /* background-image: url(/img/opa.png); */
+    background-attachment: fixed;
+    float: left;
+    margin: 0 auto;
+}
+.centerbox .mid .ttg .ut{
+    text-align: center;
+}
+.ut h1{
+    font-size: 36px;
+    color: rgba(161, 89, 30, 0.876);   
+    text-shadow: rgba(49, 29, 3, 0.212) 2px 2px 1px;
+    letter-spacing:2px;
+    font-family: 'Abril Fatface', cursive;
+    margin-top: 70px;
+}
+.ut h2{
+    font-size: 20px;
+    color: rgba(161, 89, 30, 0.876);   
+    /* text-shadow: rgba(49, 29, 3, 0.212) 2px 2px 1px; */
+    letter-spacing:2px;
+    font-family: 'Abril Fatface', cursive;
+}
+.dp{
+    width: 100%;
+    height: 400px;
+    float: left;
+    /* background-color: #333; */
+    margin-top: 30px;
+}
+.dp  ul li{
+    width: 300px;
+    height: 420px;
+    float: left;
+    margin-right: 43px;
+   
+}
+
+.dp ul li a{
+    transform: scale(1,1);
+    transition: all 0.5s;
+}
+.dp ul li:last-child{
+    margin-right: 0;
+    width: 270px;
+}
+.dp .pp1{
+    background-image: url(/img/3-3.png);
+    background-repeat: no-repeat;
+    width: 273px;
+    height: 273px;
+    float: left;
+}
+.dp .pp2{
+    background-image: url(/img/3-2.png);
+    background-repeat: no-repeat;
+    width: 273px;
+    height: 273px;
+    float: left;
+}
+.dp .pp3{
+    background-image: url(/img/3-4.png);
+    background-repeat: no-repeat;
+    width: 273px;
+    height: 273px;
+    float: left;
+}
+.dp .pp4{
+    background-image: url(/img/3-1.png);
+    background-repeat: no-repeat;
+    width: 273px;
+    height: 273px;
+    float: left;
+}
+.dp ul li p{
+    float: left;
+    width: 273px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white; 
+    text-shadow: rgb(80, 57, 30) 1px 1px 1px ;
+}
+.dp ul li:hover a{
+    transform: scale(1.2 ,1.2);
+    overflow: hidden;
+}
+
+/* 4 */
+.tg2{
+    width:1300px;
+    height: 1200px;
+    margin: 0 auto;
+    background-color: rgba(209, 166, 97, 0.26);
+    background-image: url(/img/opa.png);
+    background-attachment: fixed;
+    float: left;
+    margin-top: 70px;
+}
+.l2{
+    width: 750px;
+    height: 100%;
+    /* background-color: #333; */
+    float: left;
+}
+.l2 ul .ll1{
+    width: 700px;
+    height: 500px;
+    float: left;
+    background-image: url(/img/rrr1.png);
+    margin: 60px 50px;
+}
+.l2 ul .ll2{
+    width: 700px;
+    height: 500px;
+    float: left;
+    background-image: url(/img/rrr2.png);
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.l2 ul li .bg2{
+    background-color: rgba(51, 51, 51, 0.0);
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+.l2 ul li:hover .bg2{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.r3{
+    width: 475px;
+    height: 100%;
+    float: left;
+}
+.r3 ul .rr1{
+    width: 470px;
+    height: 340px;
+    float: left;
+    background-image: url(/img/rr_1.png);
+    /* margin-top: 20px; */
+    margin-left: 50px;
+    margin-top: 65px;
+}
+.r3 ul li .rr2{
+    width: 470px;
+    height: 340px;
+    float: left;
+    background-image: url(/img/the\ trevor.png);
+    margin-top: 25px;
+    margin-left: 50px;
+}
+.r3 ul .rr3{
+    width: 470px;
+    height: 340px;
+    float: left;
+    background-image: url(/img/rr3.png);
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+/* 마지막 */
+.dd1{
+    width: 100%;
+    height: 550px;
+    background-color:#b9ae92d0;
+    float: left;
+    margin-top: 140px;
+    margin-bottom: 500px;
+}
+.cht > ul > li{
+    width: 600px;
+    float: left;
+    padding: 20px 20px ;
+    height: 100%;
+    position: relative;
+    /* background-color: yellowgreen; */
+}
+.cht ul li img{
+    position: absolute;
+    top: 100px;
+    right: 30px;
+}
+.cht ul li .nws{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-bottom: #dad3be 3px solid;
+    padding-bottom: 30px;
+    margin-top: 70px;
+}
+.cht ul li .nws:hover{
+    color: #333;
+    transition: all 0.6s;
+}
+.news{
+    float: left;
+    margin-top: 30px;
+}
+.news ul li a{
+    padding: 15px 0;
+    font-size: 20px
+}
+.news ul li:hover a{
+    color: rgba(160, 81, 45, 0.616);
+    font-weight: bold;
+    text-decoration: underline;
+}
+.cht ul li .colum{
+    background-image: url(/img/Layer\ 14.png);
+    /* background-attachment: fixed; */
+    width: 550px;
+    height: 280px;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: all 0.8s;
+    background-size: 100%;
+    /* transform: scale(1,1); */
+}
+.cht ul li .colum:hover{
+    background-size: 105%;
+    /* transform: scale(1.2,1.2); */
+}
+.cht ul li .colum a{
+    background-color: rgba(22, 22, 22, 0.5);
+    width: 100%;
+    height: 100%;
+}
+.cht ul li .colum:hover a{
+    background-color: rgba(51, 51, 51, 0);
+    transition: all 0.5s;
+}
+.cht ul li .colum a span,p{
+    display: block;
+    width: 230px;
+    font-size: 20px;
+    color: #e6dbd3;    
+}
+.cht ul li .colum p:hover{
+    color: white;
+    font-weight: bold;
+}
+.colum a span{
+ padding: 40px;
+}
+.colum a p{
+    padding-left: 40px;
+    font-size: 40px;
+}
+
+/* footer */
+
+.centerbox_foott{ width: 100%; border-top: #333 2px solid; margin-top: 90px;}
+.f_logo, .info, address, .iconss{
+    float: left;
+}
+.f_logo{
+    padding: 30px;
+}
+.info{width:1000px; margin-top: 60px; padding-left: 40px;}
+.info ul li{float: left; border-right: rgba(51, 51, 51, 0.39) 1px solid; padding:0 10px;}
+.info ul li:last-child{border: none;}
+address{padding-left: 40px; margin-top: 20px;}
+.iconss{padding-left: 300px;}
+.iconss ul li{float: left; padding-left: 10px;}
+.iconss ul li a img{width: 30px;}
